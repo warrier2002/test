@@ -82,14 +82,18 @@ The app runs at **http://localhost:5001**
 ## 🌿 Git Workflow
 
 This repository demonstrates an advanced Git workflow:
-
 1. **Branching & Merging**: `Harshit_Sharma` → `main`
 2. **Conflict Resolution**: `Harshit_Sharma_new` merged with conflict resolved
 3. **Parallel Development**: `master_1` (frontend) + `master_2` (backend) → `main`
 4. **Soft Reset & Rebase**: Sequential commits, `git reset --soft`, and `git rebase`
 
-## 📜 Git History
-The complete Git command history and branch logs are preserved in [git_log.txt](git_log.txt).
+## 📜 Git History & Submission Logs
+
+To provide full transparency and meet submission requirements, this repository includes the following logs:
+
+*   **[SUBMISSION.md](SUBMISSION.md)**: The primary submission cover sheet with feature highlights.
+*   **[git_log.txt](git_log.txt)**: A raw export of the complete Git history (`git log --all`), including branch merges and rebase activity.
+*   **[workflow_log.md](workflow_log.md)**: A detailed, step-by-step account of the entire development workflow across all assignment tasks.
 
 ---
 **Author**: Harshit Sharma
