@@ -12,7 +12,10 @@ load_dotenv()
 app = Flask(__name__)
 
 # MongoDB Configuration
-MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://harshitkumr9_db_user:Yk5i0hPdyCwTBvjq@test.z5qn1mj.mongodb.net/")
+MONGO_URI = os.getenv("MONGO_URI")
+if not MONGO_URI:
+    # App should not start without database credentials in production
+    raise ValueError("MONGO_URI environment variable is missing!")
 try:
     client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=2000)
     # Ping the server to validate connection on start

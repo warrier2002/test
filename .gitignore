@@ -1,1 +1,17 @@
+# Environment Secrets
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+# Documents
 *.docx
+*.pdf
+
+# System
+.DS_Store

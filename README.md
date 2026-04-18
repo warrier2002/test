@@ -54,6 +54,12 @@ cd test
 # Install dependencies
 pip install Flask pymongo python-dotenv
 
+# Setup environment variables
+# 1. Copy the template
+cp .env.example .env
+# 2. Edit .env and add your real MongoDB connection string
+nano .env 
+
 # Run
 python3 app.py
 ```
