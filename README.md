@@ -1,46 +1,73 @@
-# Harshit Sharma - Flask & MongoDB Integration Assignment
+# Flask & MongoDB Assignment
 
-A premium Flask-based web application demonstrating complex Git workflows, MongoDB Atlas integration, and modern UI design.
+A Flask web application integrated with MongoDB Atlas, featuring form submissions, a To-Do list, and a data viewer with search functionality.
 
-## 🚀 Overview
-This project fulfills a comprehensive assignment requiring a backend API server, a frontend data-entry portal, and a sophisticated version control history including branching, merging, conflict resolution, and soft resets.
+## 🚀 Features
+
+- **API Endpoint** (`/api`): Returns JSON data read from a backend `data.json` file.
+- **Submission Form** (`/`): Collects Name, Email, and Message — inserts into MongoDB Atlas. Redirects to a success page on success, or shows the error on the same page.
+- **To-Do List** (`/todo`): Add tasks with Item Name, Item Description, and Item ID — stored in MongoDB.
+- **Data Viewer** (`/viewdata`): Browse all records from the database with tabs for Submissions and To-Do Items, plus live search filtering.
+- **Success Page** (`/success`): Displays "Data submitted successfully" after a valid form submission.
 
 ## 🛠 Tech Stack
-- **Backend**: Flask (Python)
-- **Database**: MongoDB Atlas (Pymongo)
-- **Frontend**: HTML5, Vanilla CSS (Premium Glassmorphism Design)
-- **Cloud Tools**: python-dotenv for secure environment management
 
-## ✨ Features
-- **API Endpoint**: `/api` returns dynamic records from a backend JSON file.
-- **Data Submission**: Interactive form that validates inputs and stores records in a MongoDB Atlas cluster.
-- **To-Do Management**: Dedicated module for task tracking with unique ID, UUID, and Hashing functionality.
-- **Error Handling**: Graceful error displays on same-page forms with redirect-to-success logic.
+- **Backend**: Python, Flask
+- **Database**: MongoDB Atlas (pymongo)
+- **Frontend**: HTML5, CSS (Glassmorphism design), Jinja2, JavaScript
 
-## 📊 Git Workflow History
-This repository maintains a detailed commit history split across several branches:
-- `Harshit_Sharma`: Initial core development.
-- `Harshit_Sharma_new`: Demonstration of merge conflict resolution.
-- `master_1`: Frontend feature development (UI/UX).
-- `master_2`: Backend API development (Routes/Data).
-- `main`: Optimized production branch following advanced Git Reset and Rebase patterns.
+## 📁 Project Structure
 
-## ⚙️ Setup & Installation
-1. **Clone the repository**:
-   ```bash
-   git clone git@github.com:warrier2002/test.git
-   ```
-2. **Install dependencies**:
-   ```bash
-   pip install Flask pymongo python-dotenv
-   ```
-3. **Configure MongoDB**:
-   Create a `.env` file or update `app.py` with your `MONGO_URI`.
-4. **Run the application**:
-   ```bash
-   python3 app.py
-   ```
-   The app will be available at `http://localhost:5001`.
+```
+├── app.py               # Flask application with all routes
+├── data.json             # Backend JSON data for /api route
+├── static/
+│   └── style.css         # CSS styles
+├── templates/
+│   ├── index.html        # Home page with submission form
+│   ├── todo.html         # To-Do list form
+│   ├── success.html      # Success redirect page
+│   └── viewdata.html     # Data viewer with search
+└── README.md
+```
+
+## ⚙️ Setup & Run
+
+```bash
+# Clone
+git clone git@github.com:warrier2002/test.git
+cd test
+
+# Install dependencies
+pip install Flask pymongo python-dotenv
+
+# Run
+python3 app.py
+```
+
+The app runs at **http://localhost:5001**
+
+## 📊 Routes
+
+| Route | Method | Description |
+|---|---|---|
+| `/` | GET | Home page with submission form |
+| `/api` | GET | Returns JSON list from data.json |
+| `/submit` | POST | Inserts form data into MongoDB |
+| `/todo` | GET | To-Do list form |
+| `/submittodoitem` | POST | Inserts To-Do item into MongoDB |
+| `/viewdata` | GET | Data viewer with search & filter |
+| `/api/alldata` | GET | Returns all MongoDB data as JSON |
+| `/success` | GET | Success confirmation page |
+
+## 🌿 Git Workflow
+
+This repository demonstrates an advanced Git workflow:
+
+1. **Branching & Merging**: `Harshit_Sharma` → `main`
+2. **Conflict Resolution**: `Harshit_Sharma_new` merged with conflict resolved
+3. **Parallel Development**: `master_1` (frontend) + `master_2` (backend) → `main`
+4. **Soft Reset & Rebase**: Sequential commits, `git reset --soft`, and `git rebase`
 
 ---
 **Author**: Harshit Sharma
