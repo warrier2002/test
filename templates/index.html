@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshit Sharma - Submission Form</title>
+    <title> Submission Form</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
     <div class="glass-container">
-        <h1>Harshit Sharma</h1>
-        <p style="margin-bottom: 2rem; color: rgba(255,255,255,0.6);">MongoDB Atlas Submission Form</p>
-        
+        <h1>
+            <p style="margin-bottom: 2rem; color: rgba(255,255,255,0.6);">Submission Form</p>
+        </h1>
         {% if error %}
         <div class="error-msg">
             {{ error }}
@@ -30,14 +32,15 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4" placeholder="How can we help?"></textarea>
             </div>
-            <button type="submit">Submit to Atlas</button>
+            <button type="submit">Submit</button>
         </form>
-        
+
         <div style="margin-top: 1.5rem; text-align: center;">
-            <a href="/api" style="color: var(--primary); font-size: 0.875rem; text-decoration: none;">View API Data</a>
+            <a href="/viewdata" style="color: var(--primary); font-size: 0.875rem; text-decoration: none;">View Data</a>
             <span style="color: rgba(255,255,255,0.2); margin: 0 0.5rem;">|</span>
             <a href="/todo" style="color: var(--primary); font-size: 0.875rem; text-decoration: none;">To-Do List</a>
         </div>
     </div>
 </body>
+
 </html>
