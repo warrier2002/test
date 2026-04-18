@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List - Harshit Sharma</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="glass-container">
+        <h1>To-Do List</h1>
+        <p style="margin-bottom: 2rem; color: rgba(255,255,255,0.6);">Add a new task below.</p>
+        
+        <form action="/submittodoitem" method="POST">
+            <div class="form-group">
+                <label for="itemName">Item Name</label>
+                <input type="text" id="itemName" name="itemName" required placeholder="What needs to be done?">
+            </div>
+            <div class="form-group">
+                <label for="itemDescription">Item Description</label>
+                <textarea id="itemDescription" name="itemDescription" rows="3" placeholder="Describe the task..."></textarea>
+            </div>
+            
+            <!-- Dynamic fields for Part 4 will be added here -->
+            
+            <button type="submit">Add To-Do Item</button>
+        </form>
+        
+        <div style="margin-top: 1.5rem; text-align: center;">
+            <a href="/" style="color: var(--primary); font-size: 0.875rem; text-decoration: none;">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

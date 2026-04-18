@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit Sharma - Submission Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="glass-container">
+        <h1>Harshit Sharma</h1>
+        <p style="margin-bottom: 2rem; color: rgba(255,255,255,0.6);">MongoDB Atlas Submission Form</p>
+        
+        {% if error %}
+        <div class="error-msg">
+            {{ error }}
+        </div>
+        {% endif %}
+
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="How can we help?"></textarea>
+            </div>
+            <button type="submit">Submit to Atlas</button>
+        </form>
+        
+        <div style="margin-top: 1.5rem; text-align: center;">
+            <a href="/api" style="color: var(--primary); font-size: 0.875rem; text-decoration: none;">View API Data</a>
+            <span style="color: rgba(255,255,255,0.2); margin: 0 0.5rem;">|</span>
+            <a href="/todo" style="color: var(--primary); font-size: 0.875rem; text-decoration: none;">To-Do List</a>
+        </div>
+    </div>
+</body>
+</html>
