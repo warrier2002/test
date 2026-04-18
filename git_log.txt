@@ -1,0 +1,85 @@
+commit abfabfa9d3042cdfe1826b7ae748aee49a87b49d
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 17:31:14 2026 +0530
+
+    Updated submission docs, workflow log, and cleared app.log
+
+commit e63c207a609e583d62f3316bf061bce83579179d
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 17:26:58 2026 +0530
+
+    Updated README with current routes and features
+
+commit c4fab3d0a25c6d3f161dc80cbf14e03722aca941
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 17:24:40 2026 +0530
+
+    version_2
+
+commit 4abb13a78cac10f5bd20ec1d84231cb1bf02d1b1
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 16:33:41 2026 +0530
+
+    Add professional README.md with project details and setup guide
+
+commit 54539d9d45df6e4d1b281d2ddf9d06b1fdf6dce7
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 15:54:56 2026 +0530
+
+    Part 4: Re-committed state after soft reset to Item ID commit
+
+commit 931994b714fd21a3d20bcf216c9c112e86b9fd12
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 15:02:13 2026 +0530
+
+    Part 4: Add Item ID field
+
+commit 56e2580f65809bf48f42d8b75c3304119b651046
+Merge: 60f2b85 a9bacf8
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 15:02:02 2026 +0530
+
+    Part 3: Merged master_2 into main
+
+commit 60f2b858feca8710c2e9d0e316bae3cb437436ec
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 15:01:40 2026 +0530
+
+    Part 3: Implemented To-Do Page frontend in master_1
+
+commit a9bacf8aa94e6a4c3bd9d385d73c541fb5e71943
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 15:01:40 2026 +0530
+
+    Part 3: Implemented /submittodoitem backend route in master_2
+
+commit b19872d4524140d5b6dfb881bdfa4fb817900601
+Merge: 417d885 702b2c9
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 14:54:25 2026 +0530
+
+    Merged Harshit_Sharma_new and resolved conflicts by accepting their changes
+
+commit 417d885f4418e2eabf53a4fdc41a8f55bf2b9c8b
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 13:43:42 2026 +0530
+
+    Modified data.json on main to create conflict
+
+commit 702b2c99b347923f76cbd2b7314cf37577bd6adf
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 13:43:42 2026 +0530
+
+    Updated data.json on Harshit_Sharma_new branch
+
+commit 8395eb7ca6e8deb25a8fd073ccdbf73e3a4665a5
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 13:43:26 2026 +0530
+
+    Part 1: Initial Flask project implementation on Harshit_Sharma branch
+
+commit f804644839649e3af45311b32523121298cfef72
+Author: warrier2002 <harshitkumr9@gmail.com>
+Date:   Sat Apr 18 13:40:20 2026 +0530
+
+    Initial commit

@@ -1,1 +1,7 @@
-[{"id": 1, "name": "Updated Item", "description": "This data was updated in Harshit_Sharma_new branch."}]
+[
+    {
+        "id": 1,
+        "name": "Updated Item",
+        "description": "This data was updated in DB."
+    }
+]
