@@ -10,6 +10,17 @@ A Flask web application integrated with MongoDB Atlas, featuring form submission
 - **Data Viewer** (`/viewdata`): Browse all records from the database with tabs for Submissions and To-Do Items, plus live search filtering.
 - **Success Page** (`/success`): Displays "Data submitted successfully" after a valid form submission.
 
+## 📸 Screenshots
+
+| Home Page | Data Viewer |
+|:---:|:---:|
+| ![Home](screenshots/home.png) | ![Data Viewer](screenshots/viewdata.png) |
+
+| To-Do Page | GitHub Repository |
+|:---:|:---:|
+| ![To-Do](screenshots/todo.png) | ![GitHub](screenshots/github_repo.png) |
+
+
 ## 🛠 Tech Stack
 
 - **Backend**: Python, Flask
@@ -28,6 +39,8 @@ A Flask web application integrated with MongoDB Atlas, featuring form submission
 │   ├── todo.html         # To-Do list form
 │   ├── success.html      # Success redirect page
 │   └── viewdata.html     # Data viewer with search
+├── screenshots/          # Application screenshots
+├── git_log.txt           # Detailed git history log
 └── README.md
 ```
 
@@ -68,6 +81,9 @@ This repository demonstrates an advanced Git workflow:
 2. **Conflict Resolution**: `Harshit_Sharma_new` merged with conflict resolved
 3. **Parallel Development**: `master_1` (frontend) + `master_2` (backend) → `main`
 4. **Soft Reset & Rebase**: Sequential commits, `git reset --soft`, and `git rebase`
+
+## 📜 Git History
+The complete Git command history and branch logs are preserved in [git_log.txt](git_log.txt).
 
 ---
 **Author**: Harshit Sharma
