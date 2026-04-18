@@ -1,3 +1,1 @@
-[
-    {"id": 1, "name": "Initial Item", "description": "This is sample data from the JSON file."}
-]
+[{"id": 1, "name": "Main branch item", "description": "This change was made on main to trigger a conflict."}]
