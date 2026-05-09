@@ -48,7 +48,7 @@ A Flask web application integrated with MongoDB Atlas, featuring form submission
 
 ```bash
 # Clone
-git clone git@github.com:warrier2002/test.git
+git clone git@github.com:warrier2002/API_Project.git
 cd test
 
 # Install dependencies
